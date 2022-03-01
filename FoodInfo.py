@@ -14,7 +14,7 @@ class FoodInfo:
     def __repr__(self):
         return 'FoodInfo({},{},{},{})'.format(self.get_proteins(),self.get_fats(),self.get_carbohydrates(),self.get_kcalories())
     def __add__(self, other):
-        return FoodInfo(self.get_proteins() + other.get_proteins(),self.get_fats() + other.get_fats(),self.get_kcalories() + other.get_kcalories())
+        return FoodInfo(self.get_proteins() + other.get_proteins(),self.get_fats() + other.get_fats(),self.get_carbohydrates() + other.get_carbohydrates())
         
 food1 = FoodInfo(100, 100, 100)
 food2 = FoodInfo(50, 60, 70)
