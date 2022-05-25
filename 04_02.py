@@ -10,3 +10,7 @@ class ReversedList:
     
   def __len__(self):
     return len(self.l)
+
+rl = ReversedList([10, 20, 30])
+for i in range(len(rl)):
+  print(rl[i])
