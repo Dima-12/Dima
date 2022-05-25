@@ -1,4 +1,4 @@
 class ReversedList:
   def __init__(self, lst):
-    self.lst = []
+    self.l = list(reserved(lst))
   
