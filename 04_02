@@ -1,0 +1,4 @@
+class ReversedList:
+  def __init__(self, lst):
+    self.lst = []
+  
