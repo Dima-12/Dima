@@ -7,6 +7,6 @@ class Libfile(Library):
         self.file = config.get('file', '/storage/lib.json')
         if exists(self.file):
             f = open(self.file)
-            data = f.read()
+            data = json.loads(f.read())
             print(data)
             f.close()
