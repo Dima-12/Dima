@@ -1,4 +1,8 @@
-from storage.lib_file import Libfile
-from os import curdir
+import os.path
 
-print(curdir)
+from storage.lib_file import Libfile
+import os
+
+library = Libfile(config= {
+  "file" : os.path.abspath(os.curdir) + "/storage/lib.json"
+})
