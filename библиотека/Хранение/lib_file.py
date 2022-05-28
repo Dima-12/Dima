@@ -12,5 +12,7 @@ class Libfile(Library):
         if exists(self.file):
             f = open(self.file)
             data = json.loads(f.read())
-            print(data)
             f.close()
+            for item in data:
+                if item.get('type') == 'book':
+                    self.storage.append(Book(**item))
