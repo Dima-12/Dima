@@ -1,5 +1,9 @@
 from interfaces.manager_library import Library
 import json
+from book import Book
+from video import Video
+from link import Link
+from os.path import exists
 
 class Libfile(Library):
     def __init__(self, config = {}):
